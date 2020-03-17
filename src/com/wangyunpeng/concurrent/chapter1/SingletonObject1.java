@@ -16,7 +16,7 @@ public class SingletonObject1 {
 class SingletonLazyObject{
     private static volatile SingletonLazyObject instance = null;
 
-    public SingletonLazyObject() {
+    private SingletonLazyObject() {
     }
 
     public SingletonLazyObject getInstance(){
@@ -30,7 +30,7 @@ class SingletonLazyObject{
 class SingletonDoubleCheckObject{
     private static SingletonDoubleCheckObject instance = null;
 
-    public SingletonDoubleCheckObject() {
+    private SingletonDoubleCheckObject() {
     }
 
     public SingletonDoubleCheckObject getInstance(){
